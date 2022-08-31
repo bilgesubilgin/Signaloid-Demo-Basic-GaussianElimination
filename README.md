@@ -8,23 +8,26 @@ The code in this repository allows one to solve a specified system of linear equ
 
 ## Inputs
 The generic inputs are the (m x n) coefficient matrix A and the (m x 1) value vector y.
-###For the provide example: 
+
+For the provided example:
 - All inputs are assumed to be uniformly distributed with range size equal to 1.
 - Expected values of the coefficient matrix A and the value vector y are:
-
+```
          ⎛ 2.0   1.0   -1.0 ⎞                  ⎛   8.0 ⎞
   E[A] = ⎜-3.0  -1.0    2.0 ⎟   ,       E[y] = ⎜ -11.0 ⎟   .
          ⎝-2.0   1.0    2.0 ⎠                  ⎝  -3.0 ⎠
+```
 
 ## Outputs
 In the case of a unique solution the code outputs the (n x 1) solution vector x that satisfies Ax = y. Else, the method prints out the case for the solution, either no solutions or infinitely many.
 It also outputs the value vector y' that is found after plugging the solution into the equations.
 
  When there is no uncertainty, the solution x to the above example system of equations is:
- 
+ ```
          ⎛  2.0 ⎞
   E[x] = ⎜  3.0 ⎟   .
          ⎝ -1.0 ⎠
+```
 
 ## Repository Tree Structure
 ```
